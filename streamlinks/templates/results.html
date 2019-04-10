@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% for vid in vids %}
+<a href="/stream?id={{vid.id}}">
+    <div class="row vid-row">
+        <div class="col-sm-5 vid-thumb">
+            <img width="246"src="{{vid.thumb}}"</>
+        </div>
+        <div class="col-sm-7 vid-title">
+            {{ vid.title }}
+        </div>
+    </div>
+</a>
+{% endfor %}
+
+{% endblock %}

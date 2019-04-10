@@ -1,0 +1,3 @@
+import streamlinks
+
+streamlinks.main()

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form action="/search" method="post">
+    <div class="form-group">
+        <input name="query" type="text">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button
+</form>
+{% endblock %}
